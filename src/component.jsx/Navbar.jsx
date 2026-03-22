@@ -11,12 +11,12 @@ export default function Navbar() {
         </Link>
 
         <div className="nav-links">
-          <a href="#">HOME</a>
-          <a href="about-us">ABOUT US</a>
+          <Link to="/">HOME</Link>
+          <Link to="/about-us">ABOUT US</Link>
           <a href="#">SERVICES</a>
-          <a href="contact-us">CONTACT US</a>
-          <a href="blog">BLOG</a>
-          <a href="policy">POLICY</a>
+          <Link to="/contact-us">CONTACT US</Link>
+          <Link to="/blog">BLOG</Link>
+          <Link to="/policy">POLICY</Link>
         </div>
 
         <button className="trial-btn">FREE TRIAL</button>
