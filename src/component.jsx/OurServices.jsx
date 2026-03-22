@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -30,10 +31,10 @@ export default function ServicesSection() {
 
       <div className="services-grid">
         {services.map((item, index) => (
-          <a className="service-card" href={item.link} key={index}>
+          <Link className="service-card" to={item.link} key={index}>
             <img src={item.img} alt={item.title} />
             <p>{item.title}</p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
