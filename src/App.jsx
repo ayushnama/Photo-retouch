@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './component.jsx/Navbar';
 import ImageSlider from './component.jsx/HeroSection';
@@ -39,19 +39,17 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/newborn-baby-retouching" element={<ServicesItem />} />
-        <Route path="/jewelry-retouching-page" element={<JewelryRetouchingPage />} />
-        <Route path="/beauty-retouching-page" element={<BeautyRetouchingPage />} />
-        <Route path="/color-correction-page" element={<ColorCorrectionPage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/policy" element={<PrivacyPolicyPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/newborn-baby-retouching" element={<ServicesItem />} />
+      <Route path="/jewelry-retouching-page" element={<JewelryRetouchingPage />} />
+      <Route path="/beauty-retouching-page" element={<BeautyRetouchingPage />} />
+      <Route path="/color-correction-page" element={<ColorCorrectionPage />} />
+      <Route path="/about-us" element={<AboutUsPage />} />
+      <Route path="/contact-us" element={<ContactUsPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/policy" element={<PrivacyPolicyPage />} />
+    </Routes>
   );
 }
 
